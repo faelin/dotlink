@@ -1,8 +1,9 @@
 DOTLINK PROJECT
 ===
-# shim dotfiles
-# dynamic linking
+# shim dotfiles through `.env` per-directory config? (dynamic symlinking)
 # merge with existing
+# combine through source/include where possible
+# rollback management
 
 NOTES
 ---
@@ -36,6 +37,7 @@ NOTES
 	target-name: .sublimerc
 ```
 
+* `.linkrc` is the master rc file that configures dotlink itself
 
 ```yaml
 #.linkrc
