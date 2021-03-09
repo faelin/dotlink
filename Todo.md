@@ -4,6 +4,11 @@ DOTLINK PROJECT
 # merge with existing
 # combine through source/include where possible
 # rollback management
+# command-line shortcut to add a named file as a source:
+```
+$> dotlink add --to='.zshrc' /Users/example/extra_stuff.zsh
+	Do you wish to alias, copy, move, or reference the target file '/Users/example/extra_stuff.zsh' [Acmrq]? s
+```
 
 NOTES
 ---
@@ -18,7 +23,6 @@ NOTES
 │   ├── flandy.zsh
 │   ├── extra_files/
 │   │   └── personal.sh
-│   │
 │   └── zsh.local
 │
 └── .zsh-custom/
@@ -35,6 +39,10 @@ NOTES
 ---
 	target-path: $HOME/.config/
 	target-name: .sublimerc
+	sources:
+		- /Users/example/Desktop/example_source.sh
+		- /Users/example/something_else.txt
+		- /Users/shared/bad_idea_to_include
 ```
 
 * `.linkrc` is the master rc file that configures dotlink itself
