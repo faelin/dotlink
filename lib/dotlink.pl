@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 
+package Dotlink
 use v5.20;
 use strict;
 use warnings;
@@ -31,4 +32,10 @@ sub rotate_existing {}
 sub rollback_target {}
 
 sub list_files {}
+
+run($ARGV);
+
+
+
+__END__
 
